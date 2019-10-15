@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .header-content {
-    width: 1200px;
+    width: 100%;
 }
 .header {
     height: 100vh;
@@ -263,7 +263,8 @@
 .header-slider-control-btn-block__prev {
     background-position-y: top;
 }
-.header-slider-control-btn-block__prev:hover, .header-slider-control-btn-block__next:hover {
+.header-slider-control-btn-block__prev:hover, 
+.header-slider-control-btn-block__next:hover {
     background-position-y: bottom;
 }
 .header-slider-control-btn-block__next {
@@ -276,7 +277,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 0;
+    bottom: 24px;
 }
 .header-next-block-circle__btn {
     background-color: transparent;
@@ -289,21 +290,13 @@
     background-image: url(../img/present-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
-    height: 1200px;
-    width: 100%;
-    top: -24px;
-    z-index: 1;
-    background-color: #fff;
-}
-.present_rect-bg {
-    background-image: url(../img/present-rect.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-position-y: 0px;
     background-position-x: center;
-    background-position-y: 100%;
-    width: 1558px;
-    height: 1558px;
+    height: 100%;
+    width: 100%;
+    top: -50px;
+    z-index: 1;
+    background-color: transparent;
 }
 .present_img-bg {
     display: flex;
@@ -316,18 +309,6 @@
     background-size: cover;
     width: 557px;
     height: 422px;
-}
-.present_img-bg::after {
-    content: '';
-    background-image: url(../img/present-text-bg-after.png);
-    width: 557px;
-    height: 395px;
-    background-size: 87%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 10px;
-    left: 0
 }
 .present__img {
     z-index: 1;
@@ -353,168 +334,58 @@
     color: #E53333;
     font-weight: bold
 }
-
-
-
-
-
-
-
-
-
-
-
+.present__img-right{
+    position: absolute;
+    right: 0;
+    height: 80%;
+}
 .advantages {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
-    top: -500px;
     left: 0;
     z-index: 2;
     width: 100%;
-    overflow-x: hidden;
     background-image: url(../img/why-we-bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 840px;
-}
-.advantages__header {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
-}
-.advantages-family-wrap {
-    position: relative;
-    top:130px;
-    width: 204px;
-    text-align: center;
-}
-.section__text_style {
-    color: #FFFFFF;
-    font-family: "Montserrat";
-    font-style: normal;
-}
-.advantages-family-wrap__text {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    width: 204px;
-}
-.advantages-work-wrap {
-    position: relative;
-    top:130px;
-    left:-450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.advantages-work-wrap__text:nth-child(1){
-    font-size: 24px;
-}
-.advantages-work-wrap__text:nth-child(2){
-    font-size: 48px;
-}
-.advantages-work-wrap__text:nth-child(3){
-    font-size: 18px;
-}
-.advantages-work-wrap__text {
+    height: 880px;
 
 }
-.advantages-ability-wrap {
-    position: relative;
-    top:10px;
-    left:450px;
+/* .advantages::before{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.advantages-skills-block__text:nth-child(1){
-    font-size: 24px;
-}
-.advantages-skills-block__text:nth-child(2){
-    font-size: 48px;
-}
-.advantages-skills-block__text:nth-child(3){
-    font-size: 18px;
-}
-.advantages-experience-block {
+    content: "";
+    background-image: url(../img/catalog-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 880px;
+    width: 100%;
+    z-index: -1;
+} */
+.advantages_bg{
     display: flex;
     position: relative;
-    top:-20px;
-}
-.advantages-experience-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.advantages-experience-block__text:nth-child(1){
-    font-size: 24px;
-}
-.advantages-experience-block__text:nth-child(2){
-    font-size: 48px;
-}
-.advantages-experience-block__text:nth-child(3){
-    font-size: 18px;
-}
-.advantages-flex-block{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-.advantages-product-block{
-    top:540px;
-    left:350px;
-}
-.advantages-uniqueness-block{
-    top:600px;
-    left:520px;
-}
-.advantages-reliability-block{
-    top:640px;
-    left:690px;
-}
-.advantages-ecology-block{
-    top:700px;
-}
-.advantages-readiness-block{
-    top:640px;
-    right: 730px;
-}
-.advantages-pricing-block{
-    top:600px;
-    right:510px;
-}
-.advantages-quality-block{
-    top:540px;
-    right:350px;
-}
-.advantages-block__text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color:#fff;
+    background-image: url(../img/catalog-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 500px;
+    width: 100%;
+    bottom: 0;
 }
 .catalog{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    top:-750px;
     width: 100%;
     background-image: url(../img/catalog-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom:544px;
 }
 .catalog__header{
     margin-top:400px;
@@ -601,29 +472,45 @@
 .work{
     width: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    height: 600px;
+}
+.work-bg_f5f5f5{
+    background-color: #f5f5f5;
+    height: 60%;
+    width: 100%;
+}
+.work-bg_fff{
+    height: 50%;
+    background-image: url(../img/bg-fff-50.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.work-content{
+    
+    position: absolute;
 }
 .work__header{
+    text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
     color: #000000;
+    margin-bottom: 70px;
 }
 .work-stages{
    
 }
 .work-stage-text{
-    display: flex;
-    flex-direction: column;
+
 }
 .work-stage__text{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 134.09%;
-    text-align: center;
+
 }
 .work-stage__1{
 
