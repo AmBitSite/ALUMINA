@@ -183,6 +183,10 @@
     margin: 0;
     margin-bottom: 50px;
     margin-top: 170px;
+    color: white;
+    background: url(../img/caption-bg.png);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 .header-caption-block__text {
     font-style: normal;
@@ -246,6 +250,7 @@
     color: rgba(255, 255, 255, 0.644);
     transition: all .3s;
     width: 20px;
+    cursor: pointer;
 }
 .header-slider-control-number-block__item_active {
     font-style: normal;
