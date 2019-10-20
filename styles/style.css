@@ -428,6 +428,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 200px;
 }
 
 .catalog__header {
@@ -564,7 +565,6 @@
     line-height: 56px;
     color: #000000;
     margin-bottom: 70px;
-    padding-top: 200px;
 }
 
 .work-stages {}
@@ -698,6 +698,7 @@
 
 .about-us {
     width: 100%;
+    padding-bottom: 110px;
 }
 
 .about-us__header {
@@ -715,14 +716,134 @@
     justify-content: flex-start;
     margin-bottom: 50px;
 }
-.about-us-block_position-end{
+
+.about-us-block_position-end {
     justify-content: flex-end;
 }
+
 .about-us-block__text {
-    width:700px;
+    width: 700px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 140%;
 }
+
+.footer {
+    background: #100F0F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px 0;
+}
+
+.footer-nav-wrap {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.footer-nav__item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    padding-bottom: 20px;
+}
+
+.footer-nav__item>a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    text-decoration: none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.footer-block-relation {
+    display: flex;
+}
+
+.footer-block-relation-phone {
+    padding-right: 100px;
+}
+
+.footer-block-relation-phone>.footer-nav-wrap {
+    margin-top: 15px;
+}
+
+.footer-nav__item>.footer-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FEC76C;
+}
+
+.footer-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FEC76C;
+}
+
+.footer-block-relation-soc {
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+}
+
+.footer-relation-soc-info {
+    margin-top: 40px;
+}
+
+.footer-block-relation-enternet {
+    padding-bottom: 22px;
+}
+
+.footer-block-relation-enternet__item>img {
+    margin-top: 22px;
+    margin-right: 6px;
+    width: 30.33px;
+    height: 30px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background:linear-gradient(to right, transparent 15%, #fff 50%, transparent 85%);
+}
+.footer-copyright {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FEFEFE;
+    
+}
+
+.footer-copyright__text {}
