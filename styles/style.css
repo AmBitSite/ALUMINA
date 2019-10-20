@@ -774,7 +774,9 @@
     color: #FEFEFE;
     text-decoration: none;
 }
-
+.footer-nav__item>a:hover{
+    color:#F73F3F
+}
 .p-0 {
     padding: 0;
 }
