@@ -136,7 +136,7 @@
     }
     .nav-list {
         flex-grow: 2;
-        margin:auto;
+        margin: auto;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -145,23 +145,23 @@
         position: relative;
         height: 160px;
         text-align: center;
-        width:120px;
+        width: 120px;
     }
     .nav-list-burger {
-        margin:0 auto;
-        width:40px;
+        margin: 0 auto;
+        width: 40px;
         height: 40px;
         cursor: pointer;
     }
     .nav-list-burger__line {
-        margin:0;
+        margin: 0;
         margin-bottom: 5px;
         height: 4px;
         background-color: #fff;
         border-radius: 10%;
     }
     .nav-item {
-        margin:0 auto;
+        margin: 0 auto;
         display: none;
         padding-right: 0px;
     }
@@ -171,19 +171,19 @@
     .nav-list:hover .nav-list-burger__line {
         background-color: #E53333;
     }
-    .header-contain{
-        width:600px
+    .header-contain {
+        width: 600px
     }
-    .header-caption-block{
-        margin:auto
+    .header-caption-block {
+        margin: auto
     }
-    .header-caption-block__text{
+    .header-caption-block__text {
         width: 450px;
     }
-    .header-slider-control-btn-block{
+    .header-slider-control-btn-block {
         align-self: flex-end;
     }
-    .header-slider-control{
+    .header-slider-control {
         display: none;
     }
     .present__img-right {
@@ -211,33 +211,33 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin:5px 15px;
+        margin: 5px 15px;
     }
 }
+
 @media (max-width:800px) {
-    .catalog-wrap{
-        width:450px
+    .catalog-wrap {
+        width: 450px
     }
-    .coment{
+    .coment {
         scroll-padding-bottom: 0px;
     }
-    .about-us-block{
+    .about-us-block {
         flex-direction: column;
     }
-    .about-us-block img{
+    .about-us-block img {
         width: 90%;
         align-self: flex-start;
     }
-    .about-us-block_position-end img{
+    .about-us-block_position-end img {
         align-self: flex-end;
         order: 1;
     }
-    .about-us-block_position-end span{
+    .about-us-block_position-end span {
         order: 2;
     }
-    .about-us-block span{
+    .about-us-block span {
         width: 90%;
-        
     }
     .footer-nav {
         width: 90%;
@@ -245,7 +245,7 @@
         flex-direction: column;
     }
     .footer-nav-wrap {
-        margin-right:0px;
+        margin-right: 0px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 30px;
@@ -257,9 +257,9 @@
     }
     .footer-block-relation-soc {
         display: block;
-
     }
 }
+
 @media (max-width:620px) {
     .nav-block {
         width: 95%;
@@ -272,8 +272,9 @@
         font-size: 26px;
     }
 }
+
 @media (max-width:450px) {
-    .carousel-control{
+    .carousel-control {
         display: none;
     }
     .header-contain {
@@ -284,9 +285,9 @@
         height: auto;
         flex-direction: row;
         justify-content: space-between;
-        width:90px;
+        width: 90px;
     }
-    .header-caption-block__main-text{
+    .header-caption-block__main-text {
         margin-top: 0px;
         line-height: 100%;
         font-size: 54px;
@@ -298,13 +299,13 @@
     .phone-wrap {
         display: none;
     }
-    .phone{
+    .phone {
         width: 58px;
     }
-    .header-slider-control-btn-block{
+    .header-slider-control-btn-block {
         padding-bottom: 60px;
     }
-    .header-next-block{
+    .header-next-block {
         display: none;
     }
     .present_img-bg {
@@ -318,6 +319,10 @@
     .catalog-card {
         width: 100%;
         height: 290px;
+    }
+    .coment-card {
+        padding: 8px 15px;
+        margin: 5px 0;
     }
     .catalog-card img {
         width: 100%;
@@ -337,7 +342,7 @@
         height: 280px;
     }
     .catalog__header {
-        z-index:2;
+        z-index: 2;
         margin-top: 50px;
     }
     .catalog {
@@ -349,8 +354,8 @@
     .work-bg_fff {
         height: 10%;
     }
-    .coment{
-        padding-bottom:50px
+    .coment {
+        padding-bottom: 50px
     }
     .coment__header {
         margin-bottom: 20px;
