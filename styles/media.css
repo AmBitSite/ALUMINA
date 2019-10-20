@@ -60,3 +60,73 @@
         font-size: 22px;
     }
 }
+@media (max-width:1250px) {
+    .header-contain{
+        width: 900px;
+    }
+    .advantages{
+        background-size: 140%;
+    }
+    .advantages_bg{
+        background-position-y: -40%;
+    }
+    .present__img-right{
+        height: 70%;
+    }
+}
+@media (max-width:1250px) {
+    .header-caption-block__text{
+        margin-bottom: 20px;
+    }
+    .header-next-block{
+        bottom: 34px;
+    }
+    .catalog-wrap {
+        width: 908px;
+        justify-content: center;
+    }
+    .catalog-card{
+        margin-right: 27px;
+        margin-left: 27px;
+    }
+    .carousel-inner{
+        padding:10px;
+    }
+    .coment-card{
+        width: 230px;
+        margin: 15px;
+    }
+    .coment-card__text{
+        font-size: 10px;
+    }
+    .footer-block-relation{
+        flex-direction: column;
+    }
+    .footer-block-relation-soc{
+        padding-top: 17px;
+    }
+    .footer-relation-soc-info{
+        margin-top: 20px;
+    }
+    .footer-nav{
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+    }
+    .footer-block-relation-phone{
+        padding-right: 0;
+    }
+    .footer-nav__item{
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    .footer-nav__item a{
+        font-size: 13px;
+    }
+    .footer-nav__item>.footer-nav__link{
+        font-size: 14px;
+    }
+}
+@media (max-width:1250px) {
+    
+}

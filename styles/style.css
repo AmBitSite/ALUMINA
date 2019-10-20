@@ -483,42 +483,9 @@
     transform: scale(1.1);
 }
 
-.catalog-card-bg>.catalog-card-bg{
+.catalog-card-bg .catalog-card-bg{
     position: absolute;
     z-index: 2;
-}
-.catalog-card-bg__1 {
-    background-image: url(../img/catalog-bg-1.png)
-}
-
-
-
-
-.catalog-card-bg__3 {
-}
-
-.catalog-card-bg__4 {
-    background-image: url(../img/catalog-bg-4.png)
-}
-
-.catalog-card-bg__5 {
-    background-image: url(../img/catalog-bg-5.png)
-}
-
-.catalog-card-bg__6 {
-    background-image: url(../img/catalog-bg-6.png)
-}
-
-.catalog-card-bg__7 {
-    background-image: url(../img/catalog-bg-7.png)
-}
-
-.catalog-card-bg__8 {
-    background-image: url(../img/catalog-bg-8.png)
-}
-
-.catalog-card-bg__9 {
-    background-image: url(../img/catalog-bg-9.png)
 }
 
 .catalog-card-filter {
