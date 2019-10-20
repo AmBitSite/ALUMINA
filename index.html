@@ -29,23 +29,23 @@
                                 <hr class="nav-list-burger__line">
                             </div>
                             <li class="nav-item">
-                                <a href="#" class="nav-item__link">ГЛАВНАЯ</a>
+                                <a href="index.html" class="nav-item__link">ГЛАВНАЯ</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item__link">КАТАЛОГ</a>
+                                <a href="#catalog" class="nav-item__link">КАТАЛОГ</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item__link">ПРОИЗВОДСТВО</a>
+                                <a href="#work" class="nav-item__link">ПРОИЗВОДСТВО</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item__link">ОТЗЫВЫ</a>
+                                <a href="#coment" class="nav-item__link">ОТЗЫВЫ</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-item__link">О НАС</a>
+                                <a href="#about-us" class="nav-item__link">О НАС</a>
                             </li>
                         </ul>
                         <div class="phone">
-                            <i class="phone-icon"></i>
+                            <a href="#phone"><i class="phone-icon"></i></a>
                             <ul class="phone-wrap">
                                 <li class="phone-item">
                                     <a href="tel:+375336032446" class="phone-link">+375(33) 603-24-46</a>
@@ -61,11 +61,17 @@
                     </div>
                 </nav>
             </div>
-            <div class="slider">
-                <div class="slider__item slider_item__1st"></div>
-                <div class="slider__item slider_item__2st"></div>
-                <div class="slider__item slider_item__3st"></div>
-                <div class="slider__item slider_item__4st"></div>
+            <div id="viewport">
+                <ul id="slidewrapper" class="slider ">
+                    <li class="slide slider__item slider_item__1st"><img class="slide-img" src="img/header-bg.jpg" alt="">
+                    </li>
+                    <li class="slide slider__item slider_item__2st"><img class="slide-img" src="img/header-bg2.png" alt="">
+                    </li>
+                    <li class="slide slider__item slider_item__3st"><img class="slide-img" src="img/header-bg3.png" alt="">
+                    </li>
+                    <li class="slide slider__item slider_item__4st"><img class="slide-img" src="img/header-bg4.png" alt="">
+                    </li>
+                </ul>
             </div>
             <div class="header-contain">
                 <div class="header-link-block">
@@ -79,21 +85,20 @@
                 <div class="header-caption-block">
                     <h1 class="header-caption-block__main-text">alumina</h1>
                     <h2 class="header-caption-block__text">Долговечная система ограждения из алюминия</h2>
-                    <a class="header-caption-block__btn" href="#"><span>Перейти в каталог</span></a>
+                    <a class="header-caption-block__btn" href="#catalog"><span>Перейти в каталог</span></a>
                 </div>
                 <div class="header-slider-control">
-                    <div class="header-slider-control-number-block">
-                        <a href="#"
-                            class="header-slider-control-number-block__item header-slider-control-number-block__item_active">01</a>
-                        <a href="#" class="header-slider-control-number-block__item">02</a>
-                        <a href="#" class="header-slider-control-number-block__item">03</a>
-                        <a href="#" class="header-slider-control-number-block__item">04</a>
-                    </div>
+                    <ul class="header-slider-control-number-block" id="nav-btns">
+                        <li class="slide-nav-btn header-slider-control-number-block__item header-slider-control-number-block__item_active">01</a>
+                        <li class="slide-nav-btn header-slider-control-number-block__item">02</li>
+                        <li class="slide-nav-btn header-slider-control-number-block__item">03</li>
+                        <li class="slide-nav-btn header-slider-control-number-block__item">04</li>
+                        </ul>
                 </div>
             </div>
             <div class="header-slider-control-btn-block">
-                <button class="header-slider-control-btn-block__btn header-slider-control-btn-block__prev"></button>
-                <button class="header-slider-control-btn-block__btn header-slider-control-btn-block__next"></button>
+                <button class="header-slider-control-btn-block__btn header-slider-control-btn-block__prev" id="prev-btn"></button>
+                <button class="header-slider-control-btn-block__btn header-slider-control-btn-block__next" id="next-btn"></button>
             </div>
             <div class="header-next-block">
                 <div class="header-next-block-circle">
@@ -176,7 +181,7 @@
             </section>
         </section>
 
-        <section class="catalog">
+        <section id="catalog" class="catalog">
             <h2 class="catalog__header">Каталог</h2>
             <div class="catalog-wrap">
                 <div class="catalog-card">
@@ -235,7 +240,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section id="work" class="work">
             <div class="work-bg_f5f5f5">
             </div>
             <div class="work-bg_fff"></div>
@@ -246,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="coment">
+        <section id="coment" class="coment">
             <h2 class="coment__header">Отзывы</h2>
             <div id="carousel-example-generic" class="carousel slide coment-slider" data-ride="carousel">
                 <ol class="carousel-indicators coment-slider-indicators">
@@ -415,7 +420,7 @@
                 </a>
             </div>
         </section>
-        <section class="about-us">
+        <section id="about-us" class="about-us">
             <h2 class="about-us__header">О нас</h2>
             <div class="about-us-block">
                 <img src="img/about-us-img-1.png" alt="">
@@ -471,7 +476,7 @@
                         <span class="footer-nav__item">Многоканальный телефон:</span>
                         <ul class="footer-nav-wrap">
                             <li class="footer-nav__item p-0">
-                                <a class="footer-nav__link" href="tel:+375336032446">+375 33 603-24-46</a>
+                                <a id="phone" class="footer-nav__link" href="tel:+375336032446">+375 33 603-24-46</a>
                             </li>
                             <li class="footer-nav__item p-0">
                                 <a class="footer-nav__link" href="tel:+375333344437">+375 33 334-44-37</a>
