@@ -36,12 +36,17 @@
     .advantages_bg {
         height: 380px;
     }
+    .work{
+        height: 420px;
+    }
     .work-stages{
         display: flex;
         justify-content: center;
     }
+    .work__header{
+        margin-bottom: 30px;
+    }
     .work-stages>img{
-        margin-top:40px;
         width:70%
     }
     .coment-slider{
