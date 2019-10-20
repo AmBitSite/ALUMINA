@@ -101,6 +101,9 @@
     .coment-card__text {
         font-size: 10px;
     }
+    .footer-nav-wrap{
+        margin-right: 0;
+    }
     .footer-block-relation {
         flex-direction: column;
     }
@@ -127,6 +130,12 @@
     }
     .footer-nav__item>.footer-nav__link {
         font-size: 14px;
+    }
+    .bread-crumbs{
+        width:85%
+    }
+    .section-grid-wrap{
+        justify-content: space-around;
     }
 }
 
@@ -158,6 +167,13 @@
         margin-bottom: 5px;
         height: 4px;
         background-color: #fff;
+        border-radius: 10%;
+    }
+    .nav-list-burger__line_black{
+        margin: 0;
+        margin-bottom: 5px;
+        height: 4px;
+        background-color: #000;
         border-radius: 10%;
     }
     .nav-item {
