@@ -299,7 +299,7 @@
         display: none;
     }
     .phone{
-        width: auto;
+        width: 58px;
     }
     .header-slider-control-btn-block{
         padding-bottom: 60px;
@@ -310,7 +310,7 @@
     .present_img-bg {
         margin-top: 50px;
         width: 307px;
-        height: 202px;
+        height: 242px;
     }
     .catalog-wrap {
         width: 320px;
@@ -325,5 +325,35 @@
     }
     .carousel-inner {
         padding: 0px;
+    }
+    .work__header {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .advantages_bg {
+        bottom: -170px;
+    }
+    .advantages {
+        height: 280px;
+    }
+    .catalog__header {
+        z-index:2;
+        margin-top: 50px;
+    }
+    .catalog {
+        padding-bottom: 50px;
+    }
+    .work {
+        height: 220px;
+    }
+    .work-bg_fff {
+        height: 10%;
+    }
+    .coment{
+        padding-bottom:50px
+    }
+    .coment__header {
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 }
