@@ -809,3 +809,47 @@
     background-color: #c4c4c4;
     color:#000
 }
+.toTop{
+    position: fixed;
+    width:60px;
+    height: 60px;
+    background-color: #6a6a6a;
+    border:none;
+    bottom: 50px;
+    right: 80px;
+    z-index: 14;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 3.5px;
+}
+.toTop>span{
+    color:#fff;
+    font-size: 14px;
+}
+.toTop:hover{
+    background-color: #181818;
+}
+.toTop::before{
+    display: block;
+    content:"";
+    width:10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top:9px;
+    margin-left:18px;
+}
+.toTop:focus{
+    outline:none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

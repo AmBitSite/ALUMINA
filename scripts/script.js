@@ -93,20 +93,6 @@ $('a[href*="#"]').click(function () {
         return false;
     }
 });
-// jQuery(document).ready(function ($) {
-//     $('.popup-content').magnificPopup({
-//         type: 'image'
-//     });
-// });
-// $('.image-popup-zoom').magnificPopup({
-//     type: 'image',
-//     zoom: {
-//         enabled: true,
-//         duration: 300, // продолжительность анимации. Не меняйте данный параметр также и в CSS
-//         preload: [0,42]
-//     }
-// });
-
 $(document).ready(function () {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
@@ -140,3 +126,13 @@ $(".gallery-more").click(function () {
         }
     }
 })
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 100) {
+        $(".toTop").fadeIn();   
+    } else {
+        $('.toTop').fadeOut();
+    }
+});
+$('.toTop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+});
