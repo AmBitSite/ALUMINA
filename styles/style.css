@@ -782,6 +782,9 @@
     margin-bottom: 65px;
     transition: all .5s;
 }
+.section-grid-wrap__item>img{
+    border-radius: 5px;
+}
 .section-grid-wrap__item:nth-child(-n+9){
     display: flex;
 }
