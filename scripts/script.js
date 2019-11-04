@@ -93,15 +93,50 @@ $('a[href*="#"]').click(function () {
         return false;
     }
 });
-jQuery(document).ready(function ($) {
-    $('.popup-content').magnificPopup({
-        type: 'inline'
+// jQuery(document).ready(function ($) {
+//     $('.popup-content').magnificPopup({
+//         type: 'image'
+//     });
+// });
+// $('.image-popup-zoom').magnificPopup({
+//     type: 'image',
+//     zoom: {
+//         enabled: true,
+//         duration: 300, // продолжительность анимации. Не меняйте данный параметр также и в CSS
+//         preload: [0,42]
+//     }
+// });
+
+$(document).ready(function () {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
     });
 });
-$('.image-popup-zoom').magnificPopup({
-    type: 'image',
-    zoom: {
-        enabled: true,
-        duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+
+$(".gallery-more").click(function () {
+    if ($(".gallery-more").text()==="Показать все") {
+        for (i = 0; i < document.getElementsByClassName("section-grid-wrap__item").length; i++) {
+            document.getElementsByClassName("section-grid-wrap__item")[i].style.display = "flex";
+        }
+        $(".gallery-more").text("Скрыть")
     }
-});
+    else{
+        for (i = 0; i < document.getElementsByClassName("section-grid-wrap__item").length; i++) {
+            if(i>8){
+                document.getElementsByClassName("section-grid-wrap__item")[i].style.display = "none";
+            }
+            $(".gallery-more").text("Показать все")
+        }
+    }
+})

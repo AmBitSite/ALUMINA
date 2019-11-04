@@ -775,9 +775,34 @@
     justify-content: space-between;
 }
 .section-grid-wrap__item{
-    display: flex;
+    display: none;
     width: 350px;
     height: 350px;
     background: #C4C4C4;
     margin-bottom: 65px;
+    transition: all .5s;
+}
+.section-grid-wrap__item:nth-child(-n+9){
+    display: flex;
+}
+.gallery-more{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%; 
+    border: none;
+    background-color: transparent;
+    padding:22px 91px;
+    border: 2px solid #000;
+    transition: all .3s;
+    outline: none;
+}
+.gallery-more:hover{
+    color:#fff;
+    background-color: #000;
+}
+.gallery-more:active{
+    background-color: #c4c4c4;
+    color:#000
 }
