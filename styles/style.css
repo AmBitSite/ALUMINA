@@ -856,3 +856,7 @@
     display: -ms-flexbox;
     display: flex;
 }
+.temp-text{
+    text-align: center;
+    font-size: 36px;
+}
