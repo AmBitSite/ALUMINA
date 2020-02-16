@@ -102,7 +102,7 @@ $(document).ready(function () {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1]
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
@@ -136,3 +136,20 @@ $(window).scroll(function () {
 $('.toTop').click(function() {
     $('body,html').animate({scrollTop:0},800);
 });
+
+let arr = document.getElementsByClassName("menu__item")
+for(let i = 0; i<arr.length; i++){
+    arr[i].addEventListener("click", ()=>{
+        document.querySelector(".menu__box").classList.toggle("menu__box_active")
+        arrLine[0].classList.toggle("d-none")
+        arrLine[1].classList.toggle("menu-btn__line_45deg")
+        arrLine[2].classList.toggle("menu-btn__line_90deg") 
+    })
+}
+let arrLine = document.getElementsByClassName("menu-btn__line")
+document.getElementById("menu__toggle").addEventListener("click", ()=>{
+        document.querySelector(".menu__box").classList.toggle("menu__box_active")
+        arrLine[0].classList.toggle("d-none")
+        arrLine[1].classList.toggle("menu-btn__line_45deg")
+        arrLine[2].classList.toggle("menu-btn__line_90deg")
+})
